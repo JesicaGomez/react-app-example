@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
+// para importar mas componentos los voy concatenando en import 
 import { Container, Card, Icon, Image} from 'semantic-ui-react';
 
 
 class App extends Component {
     render() {
+      //Creo un objeto para poner estilos, luego lo llamo en cada etiqueta
       const style = {
          display: 'flex',
          justifyContent: 'space-around',
          flexWrap: 'wrap'
       }
-
+      // este es mi conjunto de objetos el cual se va a repetir en container
       const cards = [
         {
           title: "Guillermo",
@@ -63,7 +65,7 @@ class App extends Component {
       return (
       <Container style={style} >
               {cards.map(item => (
-                  <Card style={{margin: '0'}}>
+                  <Card style={{margin: '10px'}}>
                     <Image src={item.image} />
                     <Card.Content>
                       <Card.Header>

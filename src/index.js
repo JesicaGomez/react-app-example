@@ -3,6 +3,6 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-
-ReactDOM.render(<App />, document.getElementById('cards'));
+//Estoy seleccionando el elemento que deseo se muestre en mi index.html
+ReactDOM.render(<App />, document.getElementById('cars'));
 registerServiceWorker();
